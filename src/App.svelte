@@ -1,7 +1,7 @@
 <script>
   import { users, trends, icons } from "./lib/info";
   import Icon from "./components/Icon.svelte";
-  import WhoToFollow from "./components/WhoToFollow.svelte"
+  import WhoToFollow from "./components/WhoToFollow.svelte";
   import Trends from "./components/Trends.svelte";
   // Convertir el objeto 'icons' a un array de valores
   const iconsArray = Object.values(icons);
@@ -13,8 +13,8 @@
 </script>
 
 <div class="container">
-  <img class="logo" src="src/assets/svg/premium.svg" alt="logo" />
-
+  <h1>Twitter</h1>
+   <img src="src/assets/svg/premium.svg" alt="X imagen">
   <div class="grid-container">
     <main class="main">
       {#each iconsArray as icon}
@@ -71,6 +71,7 @@
 
   .main {
     grid-column: 1; /* Columna principal a la izquierda */
+    margin: 2px;
   }
 
   .spacer {
@@ -79,6 +80,10 @@
     padding-right: 0.5rem;
     font-size: 2.5rem;
     color: rgb(11, 10, 10);
+    background-color: rgb(225, 219, 219);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 2px;
   }
 
   .aside {
@@ -86,6 +91,10 @@
     padding-left: 0.5rem; /* px-2 */
     padding-right: 0.5rem;
     padding-bottom: 2.5rem; /* pb-10 */
+    background-color: rgb(225, 219, 219);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 2px;
   }
 
   .aside h2 {
@@ -115,5 +124,10 @@
     border-radius: 9999px; /* rounded-full */
     background-color: #3b82f6; /* bg-blue-500 */
     color: white; /* text-white */
+  }
+  main {
+    background-color: rgb(225, 219, 219);
+    padding: 15px;
+    border-radius: 10px;
   }
 </style>
